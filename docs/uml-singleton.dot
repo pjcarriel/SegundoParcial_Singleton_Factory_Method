@@ -1,0 +1,14 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.25, nodesep=0.55, ranksep=0.7];
+  node [shape=record, fontname="DejaVu Sans", fontsize=11, style="filled", fillcolor="#eef4ff", color="#5276b5", margin="0.14,0.12"];
+  edge [fontname="DejaVu Sans", fontsize=10, color="#4a5568", arrowsize=0.7];
+  principal [label="{Principal|+ main()\l+ demostrarSingleton()\l}"];
+  conexion [label="{ConexionBaseDatos «Singleton»|- static final INSTANCIA\l- pool: HikariDataSource\l- ConexionBaseDatos()\l|+ getInstancia()\l+ obtenerConexion()\l+ cerrar()\l}", fillcolor="#dfe9ff"];
+  repo [label="{RepositorioAlertasJdbc|- conexion: ConexionBaseDatos\l|+ guardar(IAlerta)\l+ listar()\l+ contarPorTipo()\l}"];
+  hikari [label="{HikariCP|«pool de conexiones JDBC»}", fillcolor="#f6f7fb"];
+  mysql [label="{MySQL|soc_alertas.alertas}", fillcolor="#f6f7fb"];
+  principal -> conexion [label=" getInstancia() × 5"];
+  repo -> conexion [label=" solicita Connection"];
+  conexion -> hikari [label=" administra"];
+  hikari -> mysql [label=" JDBC"];
+}

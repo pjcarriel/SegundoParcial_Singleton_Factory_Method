@@ -1,0 +1,6 @@
+# COPIAR a config/database.properties Y MODIFICAR SOLO EN LA COPIA.
+# No subir config/database.properties a GitHub.
+jdbc.url=jdbc:mysql://localhost:3306/soc_alertas?serverTimezone=UTC
+jdbc.user=root
+jdbc.password=CAMBIA_ESTA_CONTRASENA
+pool.maximo=5

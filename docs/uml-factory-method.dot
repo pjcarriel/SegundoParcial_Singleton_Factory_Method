@@ -1,0 +1,24 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.4, ranksep=0.6];
+  node [shape=record, fontname="DejaVu Sans", fontsize=10, style="filled", fillcolor="#f0f8f2", color="#50976c", margin="0.12,0.09"];
+  edge [fontname="DejaVu Sans", fontsize=9, color="#536556", arrowsize=0.65];
+  creator [label="{FabricaAlerta «abstract»|+ crear(String): IAlerta\l# crearAlerta(String): IAlerta «abstract»\l}", fillcolor="#ddf3e4"];
+  c1 [label="{FabricaAlertaAcceso|# crearAlerta(): IAlerta\l}"];
+  c2 [label="{FabricaAlertaRed|# crearAlerta(): IAlerta\l}"];
+  c3 [label="{FabricaAlertaServidor|# crearAlerta(): IAlerta\l}"];
+  product [label="{IAlerta «interface»|+ tipo()\l+ severidad()\l+ descripcion()\l}", fillcolor="#ddf3e4"];
+  p1 [label="{AlertaAcceso|+ tipo() = ACCESO\l}"];
+  p2 [label="{AlertaRed|+ tipo() = RED\l}"];
+  p3 [label="{AlertaServidor|+ tipo() = SERVIDOR\l}"];
+  registro [label="{RegistroFabricas|+ crear(tipo, descripcion): IAlerta\l}", fillcolor="#f4f4f4"];
+  creator -> c1 [dir=back, arrowtail=empty];
+  creator -> c2 [dir=back, arrowtail=empty];
+  creator -> c3 [dir=back, arrowtail=empty];
+  product -> p1 [dir=back, arrowtail=empty];
+  product -> p2 [dir=back, arrowtail=empty];
+  product -> p3 [dir=back, arrowtail=empty];
+  c1 -> p1 [style=dashed, label="crea"];
+  c2 -> p2 [style=dashed, label="crea"];
+  c3 -> p3 [style=dashed, label="crea"];
+  registro -> creator [style=dashed, label="selecciona"];
+}
