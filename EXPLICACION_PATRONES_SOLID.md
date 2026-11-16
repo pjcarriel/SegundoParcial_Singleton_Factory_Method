@@ -110,36 +110,10 @@ AlertaRegistrada con identificador y fecha
 
 **Sobre `new`:** no está prohibido por los patrones. `new AlertaRed(...)` se encuentra en `FabricaAlertaRed`, donde corresponde. El `Principal` utiliza unos pocos `new` al **configurar dependencias iniciales**, en lugar de construir alertas al procesar cada solicitud.
 
-## 6. Archivos que el estudiante debe poder defender
-
-| Archivo | Qué explicar durante la exposición |
-|---|---|
-| `Principal.java` | Menú; opción 1 une ambos patrones; opción 4 prueba 5 referencias; opción 5 prueba fábricas. |
-| `ConexionBaseDatos.java` | `static final`, constructor privado, `getInstancia`, pool y cierre. |
-| `IAlerta.java` | Contrato común del producto. |
-| `FabricaAlerta.java` | Método abstracto `crearAlerta`, validaciones y polimorfismo. |
-| `FabricaAlertaAcceso/Red/Servidor.java` | Cómo se decide el tipo concreto con `new` en la fábrica. |
-| `RegistroFabricas.java` | Cómo un texto se convierte en una fábrica sin crear productos en un `switch`. |
-| `ServicioAlertas.java` | Orquestación con interfaces y separación de responsabilidades. |
-| `RepositorioAlertasJdbc.java` | MySQL, JDBC, `PreparedStatement` y recursos cerrados. |
-| `database/schema.sql` | Tabla MySQL y persistencia. |
-
-## 7. Qué NO afirma este ejemplo
+## 6. Qué NO afirma este ejemplo
 
 - No prueba una reducción cuantificable del uso de RAM a través del hash.
 - No crea un Singleton compartido por varias máquinas o JVM.
 - No simula ataques reales ni actúa como sistema de defensa de red.
 - No determina severidades conforme a una norma; son etiquetas ilustrativas.
 - No elimina por completo `new`; encapsula la **creación variable**.
-
-## 8. Preguntas probables del docente
-
-**¿Por qué Singleton en las conexiones?** Para reutilizar un único **gestor del pool** en el proceso; no para reutilizar una `Connection` global.
-
-**¿Por qué `identityHashCode` en vez de `hashCode()`?** `identityHashCode` se basa en la identidad del objeto; no depende de un posible `hashCode()` sobrescrito. De todos modos, la comparación `==` es la verificación correcta.
-
-**¿Cómo se demuestra Factory Method?** Comparando las tres clases creadoras que implementan `crearAlerta` y los tres productos que implementan `IAlerta`.
-
-**¿Qué pasa si añadimos otro tipo?** Creamos un producto y una fábrica nueva, y la registramos en el punto de arranque; los servicios y repositorios permanecen intactos.
-
-**¿Por qué conservar MySQL si la demostración es en consola?** Para verificar que el resultado del Factory Method puede persistirse y recuperarse con un módulo de acceso a datos claramente separado.
