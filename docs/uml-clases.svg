@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1780" height="930" viewBox="0 0 1780 930" xmlns:c2pa="http://c2pa.org/manifest"><defs>
+  <marker id="tri" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="18" markerHeight="18" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L19,10 L1,19 Z" fill="#0a1d4a" stroke="#9fe9ff" stroke-width="2"/></marker>
+  <marker id="open" viewBox="0 0 20 20" refX="18" refY="10" markerWidth="14" markerHeight="14" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M2,2 L18,10 L2,18" fill="none" stroke="#9fe9ff" stroke-width="2.4"/></marker>
+  <marker id="filled" viewBox="0 0 20 20" refX="18" refY="10" markerWidth="14" markerHeight="14" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M2,2 L18,10 L2,18 Z" fill="#9fe9ff"/></marker>
+  <marker id="diamond" viewBox="0 0 24 14" refX="1" refY="7" markerWidth="24" markerHeight="14" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,7 L12,1 L23,7 L12,13 Z" fill="#0a1d4a" stroke="#9fe9ff" stroke-width="2"/></marker>
+  <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><rect x="20" y="400" width="1075" height="510" rx="16" fill="none" stroke="#3fd0ff" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="4,8"/>
+<text x="1080" y="425" font-family="Poppins" font-size="16" fill="#3fd0ff" text-anchor="end" font-weight="700">PATRÓN FACTORY METHOD</text>
+<rect x="1165" y="470" width="580" height="440" rx="16" fill="none" stroke="#ffc857" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="4,8"/>
+<text x="1730" y="495" font-family="Poppins" font-size="16" fill="#ffc857" text-anchor="end" font-weight="700">PATRÓN SINGLETON</text>
+<rect x="20" y="10" width="280" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="160.0" y="36" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">Principal</text>
+<line x1="20" y1="50" x2="300" y2="50" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="20" y1="60" x2="300" y2="60" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="32" y="85" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" text-decoration="underline">+ main(args: String[]): void</text>
+<rect x="400" y="10" width="440" height="183" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="620.0" y="36" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">ServicioAlertas</text>
+<line x1="400" y1="50" x2="840" y2="50" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="412" y="75" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >- fabricas: IProveedorAlertas</text>
+<text x="412" y="98" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >- repositorio: IRepositorioAlertas</text>
+<line x1="400" y1="110" x2="840" y2="110" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="412" y="135" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ registrar(tipo, descripcion): AlertaRegistrada</text>
+<text x="412" y="158" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ historial(): List&lt;AlertaRegistrada&gt;</text>
+<text x="412" y="181" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ estadisticas(): Map&lt;String, Long&gt;</text>
+<rect x="1185" y="10" width="560" height="153" rx="8" fill="#2a1a6e" fill-opacity="0.92" stroke="#8a63ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="1465.0" y="32" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" >«interface»</text>
+<text x="1465.0" y="58" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">IRepositorioAlertas</text>
+<line x1="1185" y1="70" x2="1745" y2="70" stroke="#8a63ff" stroke-width="1.6"/>
+<line x1="1185" y1="80" x2="1745" y2="80" stroke="#8a63ff" stroke-width="1.6"/>
+<text x="1197" y="105" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ guardar(alerta: IAlerta): AlertaRegistrada</text>
+<text x="1197" y="128" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ listar(): List&lt;AlertaRegistrada&gt;</text>
+<text x="1197" y="151" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ contarPorTipo(): Map&lt;String, Long&gt;</text>
+<rect x="40" y="245" width="380" height="137" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="230.0" y="271" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">RegistroFabricas</text>
+<line x1="40" y1="285" x2="420" y2="285" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="52" y="310" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >- fabricas: Map&lt;String, FabricaAlerta&gt;</text>
+<line x1="40" y1="322" x2="420" y2="322" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="52" y="347" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ crear(tipo, descripcion): IAlerta</text>
+<text x="52" y="370" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ tiposDisponibles(): Set&lt;String&gt;</text>
+<rect x="500" y="245" width="340" height="130" rx="8" fill="#2a1a6e" fill-opacity="0.92" stroke="#8a63ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="670.0" y="267" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" >«interface»</text>
+<text x="670.0" y="293" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">IProveedorAlertas</text>
+<line x1="500" y1="305" x2="840" y2="305" stroke="#8a63ff" stroke-width="1.6"/>
+<line x1="500" y1="315" x2="840" y2="315" stroke="#8a63ff" stroke-width="1.6"/>
+<text x="512" y="340" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ crear(tipo, descripcion): IAlerta</text>
+<text x="512" y="363" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ tiposDisponibles(): Set&lt;String&gt;</text>
+<rect x="1185" y="245" width="560" height="160" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="1465.0" y="271" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">RepositorioAlertasJdbc</text>
+<line x1="1185" y1="285" x2="1745" y2="285" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="1197" y="310" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >- conexion: ConexionBaseDatos</text>
+<line x1="1185" y1="322" x2="1745" y2="322" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="1197" y="347" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ guardar(alerta: IAlerta): AlertaRegistrada</text>
+<text x="1197" y="370" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ listar(): List&lt;AlertaRegistrada&gt;</text>
+<text x="1197" y="393" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ contarPorTipo(): Map&lt;String, Long&gt;</text>
+<rect x="40" y="445" width="400" height="153" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="240.0" y="467" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" >«abstract»</text>
+<text x="240.0" y="493" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700" font-style="italic">FabricaAlerta</text>
+<line x1="40" y1="505" x2="440" y2="505" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="40" y1="515" x2="440" y2="515" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="52" y="540" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" font-style="italic">+ tipo(): String</text>
+<text x="52" y="563" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ crear(descripcion): IAlerta</text>
+<text x="52" y="586" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" font-style="italic"># crearAlerta(descripcion): IAlerta</text>
+<rect x="700" y="445" width="330" height="153" rx="8" fill="#2a1a6e" fill-opacity="0.92" stroke="#8a63ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="865.0" y="467" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" >«interface»</text>
+<text x="865.0" y="493" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">IAlerta</text>
+<line x1="700" y1="505" x2="1030" y2="505" stroke="#8a63ff" stroke-width="1.6"/>
+<line x1="700" y1="515" x2="1030" y2="515" stroke="#8a63ff" stroke-width="1.6"/>
+<text x="712" y="540" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ tipo(): String</text>
+<text x="712" y="563" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ severidad(): String</text>
+<text x="712" y="586" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ descripcion(): String</text>
+<rect x="1185" y="545" width="560" height="226" rx="8" fill="#3a2a08" fill-opacity="0.92" stroke="#ffc857" stroke-width="2.4" filter="url(#glow)"/>
+<text x="1465.0" y="567" font-family="Poppins" font-size="14" fill="#ffc857" text-anchor="middle" >«Singleton»</text>
+<text x="1465.0" y="593" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">ConexionBaseDatos</text>
+<line x1="1185" y1="605" x2="1745" y2="605" stroke="#ffc857" stroke-width="1.6"/>
+<text x="1197" y="630" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" text-decoration="underline">- INSTANCIA: ConexionBaseDatos</text>
+<text x="1197" y="653" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >- pool: HikariDataSource</text>
+<line x1="1185" y1="665" x2="1745" y2="665" stroke="#ffc857" stroke-width="1.6"/>
+<text x="1197" y="690" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >- ConexionBaseDatos()</text>
+<text x="1197" y="713" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" text-decoration="underline">+ getInstancia(): ConexionBaseDatos</text>
+<text x="1197" y="736" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ obtenerConexion(): Connection</text>
+<text x="1197" y="759" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ cerrar(): void</text>
+<rect x="100" y="632" width="340" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="270.0" y="658" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">FabricaAlertaAcceso</text>
+<line x1="100" y1="672" x2="440" y2="672" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="100" y1="682" x2="440" y2="682" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="112" y="707" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" ># crearAlerta(descripcion): IAlerta</text>
+<rect x="720" y="632" width="280" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="860.0" y="658" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">AlertaAcceso</text>
+<line x1="720" y1="672" x2="1000" y2="672" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="720" y1="682" x2="1000" y2="682" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="732" y="707" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ severidad(): "ALTA"</text>
+<rect x="100" y="727" width="340" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="270.0" y="753" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">FabricaAlertaRed</text>
+<line x1="100" y1="767" x2="440" y2="767" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="100" y1="777" x2="440" y2="777" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="112" y="802" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" ># crearAlerta(descripcion): IAlerta</text>
+<rect x="720" y="727" width="280" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="860.0" y="753" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">AlertaRed</text>
+<line x1="720" y1="767" x2="1000" y2="767" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="720" y1="777" x2="1000" y2="777" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="732" y="802" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ severidad(): "MEDIA"</text>
+<rect x="100" y="822" width="340" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="270.0" y="848" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">FabricaAlertaServidor</text>
+<line x1="100" y1="862" x2="440" y2="862" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="100" y1="872" x2="440" y2="872" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="112" y="897" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" ># crearAlerta(descripcion): IAlerta</text>
+<rect x="720" y="822" width="280" height="87" rx="8" fill="#0a1d4a" fill-opacity="0.92" stroke="#3fd0ff" stroke-width="2.4" filter="url(#glow)"/>
+<text x="860.0" y="848" font-family="Poppins" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">AlertaServidor</text>
+<line x1="720" y1="862" x2="1000" y2="862" stroke="#3fd0ff" stroke-width="1.6"/>
+<line x1="720" y1="872" x2="1000" y2="872" stroke="#3fd0ff" stroke-width="1.6"/>
+<text x="732" y="897" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >+ severidad(): "CRITICA"</text>
+<path d="M100,675.5 H70 V623 H240 V598" fill="none" stroke="#9fe9ff" stroke-width="2.2"/>
+<path d="M100,770.5 H70 V623 H240 V598" fill="none" stroke="#9fe9ff" stroke-width="2.2"/>
+<path d="M100,865.5 H70 V623 H240 V598" fill="none" stroke="#9fe9ff" stroke-width="2.2"/>
+<path d="M240,623 V598" fill="none" stroke="#9fe9ff" stroke-width="2.2" marker-end="url(#tri)"/>
+<path d="M1000,675.5 H1050 V623 H865 V600" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7"/>
+<path d="M1000,770.5 H1050 V623 H865 V600" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7"/>
+<path d="M1000,865.5 H1050 V623 H865 V600" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7"/>
+<path d="M865,623 V598" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#tri)"/>
+<path d="M440,675.5 H718" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#open)"/>
+<text x="580" y="667.5" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" font-style="italic">«create»</text>
+<path d="M440,770.5 H718" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#open)"/>
+<text x="580" y="762.5" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" font-style="italic">«create»</text>
+<path d="M440,865.5 H718" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#open)"/>
+<text x="580" y="857.5" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" font-style="italic">«create»</text>
+<path d="M440,540 H698" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#open)"/>
+<text x="570" y="532" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" font-style="italic">«retorna»</text>
+<path d="M240,382 V445" fill="none" stroke="#9fe9ff" stroke-width="2.2" marker-start="url(#diamond)" marker-end="url(#open)"/>
+<text x="250" y="435" font-family="Poppins" font-size="15" fill="#8fe6ff" text-anchor="start" >1..*</text>
+<path d="M420,315 H500" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#tri)"/>
+<path d="M670,193 V245" fill="none" stroke="#9fe9ff" stroke-width="2.2" marker-end="url(#open)"/>
+<path d="M300,60 H398" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#open)"/>
+<text x="350" y="50" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" font-style="italic">«usa»</text>
+<path d="M840,70 H1183" fill="none" stroke="#9fe9ff" stroke-width="2.2" marker-end="url(#open)"/>
+<text x="1010" y="60" font-family="Poppins" font-size="14" fill="#8fe6ff" text-anchor="middle" font-style="italic">depende de la abstracción (DIP)</text>
+<path d="M1465,245 V163" fill="none" stroke="#9fe9ff" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#tri)"/>
+<path d="M1465,405 V543" fill="none" stroke="#9fe9ff" stroke-width="2.2" marker-end="url(#open)"/>
+<text x="1477" y="535" font-family="Poppins" font-size="15" fill="#ffc857" text-anchor="start" >1</text>
+<path d="M1215,790 h470 l30,30 v70 h-500 Z" fill="#3a2a08" fill-opacity="0.9" stroke="#ffc857" stroke-width="1.8"/>
+<path d="M1685,790 v30 h30" fill="none" stroke="#ffc857" stroke-width="1.8"/>
+<path d="M1465,790 V773" fill="none" stroke="#ffc857" stroke-width="2.2" stroke-dasharray="9,7"/>
+<text x="1233" y="822" font-family="Poppins" font-size="16" fill="#ffc857" text-anchor="start" font-weight="700">Constructor privado + INSTANCIA static final:</text>
+<text x="1233" y="848" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >getInstancia() devuelve siempre el mismo objeto.</text>
+<text x="1233" y="872" font-family="Poppins" font-size="16" fill="#ffffff" text-anchor="start" >5 llamadas → mismo identityHashCode.</text><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4ZjRkMTM4Yy1jYzdjLTQwMTctYTBjZi0yZjc4Y2VmZGI4M2IAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaNw91y5QqMbEkvdF1kdzQ48AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo4YzY3ZTMxNi02OWFiLTRjODUtYWZhMC0wYzE5YmNiYjcyODdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNocRfSETTdAMI9OjslFoBnpwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggEsRtroTgMgp1W5Vb+7kTDhdfyfs+J8slybaYKZZbYm2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaIAdqI4uLpANMYQTjkqLbrUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYILST8d478udty2p1Ii3OOc0ntl6Lj4SHBvoUAG21iJQxZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUZjZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjhmNGQxMzhjLWNjN2MtNDAxNy1hMGNmLTJmNzhjZWZkYjgzYi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjFhZjRiMmVjLTcxYTItNDE4YS04N2ZiLWRkYzJiNmY4NTkyM3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCASxG2uhOAyCnVblVv7uRMOF1/J+z4nyyXJtpgplltibaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggDY+GgV275cteJz4muBh98IcB49sGEw+Q8OkwcXTt/0SiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggX0yrDlr05ksqgtFXFTPV03i7nbVVjeV76upMFUAiW4J0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQBzUPu26Od/XYBB7+NTSpktXt2uxtEgmOSk/9A72yWwyeAQYovK6JgGVba/IHcF0Kj697MY6S+6pzvGUDQsHfDA=</c2pa:manifest></metadata></svg>
